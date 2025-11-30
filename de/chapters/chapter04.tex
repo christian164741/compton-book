@@ -5,13 +5,13 @@
 \setcounter{secnumdepth}{3}
 \setlength{\parindent}{0pt}
 % Boxen-Stile definieren
-
+\index{Herleitung der Compton-Formel}
 
 
 %\section{Herleitung der Compton-Formel}
 \subsection*{Ein Photon stößt auf ein Elektron}
-
-
+\index{Photon nach Stoß}
+\index{Elektron nach Stoß}
 \begin{center}
 	\begin{tikzpicture}[scale=1.5, >=latex]
 		
@@ -50,22 +50,30 @@
 
 
 \subsection{Energieübertragung beim Compton-Effekt}
-
+\index{Energieübertragung}
+\index{Photon gestreut}
+\index{Compton-Effekt}
+\index{Photonenenergie}
 Das einfallende Photon besitzt eine höhere Energie (und damit eine höhere Frequenz) als das gestreute Photon nach dem Stoß. Ein Teil der Photonenenergie wird auf das Elektron übertragen, wodurch das Photon Energie verliert. Da die Energie eines Photons proportional zur Frequenz ist,
 \[
 E = h \nu,
 \]
 verringert sich nach dem Stoß die Frequenz des gestreuten Photons – seine Wellenlänge wird entsprechend größer.
+\index{Wellenlänge}
+
 \begin{DidacticBox}[Energie vs. Frequenz]
 	Ein Photon verliert beim Stoß Energie \(\Delta E\); da \(E=h\nu\), sinkt seine Frequenz und die Wellenlänge wächst (\(\lambda' > \lambda\)). 
 	Das ist die zentrale Intuition hinter der späteren Verschiebung \(\Delta\lambda\).
 \end{DidacticBox}
-
+\index{Verschiebung}
+\index{Energieerhlatung}
 \subsection{Die Energieerhaltung bei dem Stoß}
 \[
 E_\gamma + E_e = E'_\gamma + E'_e
 \]
-
+\index{Photon einfallend}
+\index{Elektron vor dem Stoß}
+\index{Elekton nach dem Stoß}
 \begin{align*}
 	E_\gamma :&\quad \text{Energie des einfallenden Photons} \\
 	E_e       : &\quad \text{Energie des Elektrons vor dem Stoß } \\
@@ -81,30 +89,36 @@ Zur Vereinfachung der Schreibweise wird definiert:\\
 
 
 \subsection{Für das masselose Photon gilt: }
+\index{Photon masselos}
 \begin{align*}
 	E_\gamma =\sqrt{m^2c^4+c^2p_\gamma^2}=cp_\gamma\quad \text{da m=0}
 \end{align*}
 
 \subsection{Für das ruhende Elektron gilt: }
+\index{Elektron ruhend}
 \begin{align*}
 	E_e =m_ec^2
 \end{align*}
 \subsection{Für das Photon nach dem Stoß  gilt: }
+\index{Photon nach dem Stoß}
 \begin{align*}
 	E'_e =\sqrt{m_e^2c^4+c^2p_e^2}
 \end{align*}
 \subsection{So ergibt sich für die Energieerhaltung}
+\index{Energieerhaltung}
 \begin{align}
 	E_\gamma + E_e&= E'_\gamma + E'_e\nonumber\\
 	cp_\gamma+m_ec^2&=cp'_\gamma+\sqrt{m_e^2c^4+c^2{p'_e}^2} \label{Energie}
 \end{align}
 Gesucht: Beziehung zwischen $p_\gamma, p'_\gamma$ und den Winkel $\theta$. Also muss $p'_e$ eliminiert werden.\\
 \subsection{Für die Impulserhaltung gilt:}
+\index{Impulserhaltung}
 Koordinatensystem geschickt gewählt:\\
 \begin{itemize}
 	\item Elektron im Ursprung
 	\item Photon fliegt entlang der X-Achse direkt auf das Elektron
-	
+	\index{Elektron vor Stoß}
+	\index{Elektron nach Stoß}
 \end{itemize}
 \begin{center}
 	\begin{tikzpicture}[scale=1.5, >=latex]
@@ -167,6 +181,7 @@ Dies ergibt dann zwei Gleichungen:\\
 
 
 Ebenso gilt die Beziehung mit Pythagoras:\\
+\index{Pythagoras}
 \begin{align}
 	{p'}^2_e=	{p'}^2_{ex}+	{p'}^2_{ey}\label{p}
 \end{align}
@@ -175,7 +190,7 @@ Jetzt (\ref{pex})  und (\ref{pe}) in (\ref{p}) einsetzen und dies ergibt dann di
 	{p'}^2&=(p_\gamma-p'_{\gamma x})^2+(-p'_{\gamma y})^2 \nonumber\\
 	&=p_\gamma^2-2p_\gamma p'_{\gamma x}+p'^2_{\gamma x}+p'^2_{\gamma y}\label{ppp}
 \end{align}
-
+\index{Impulserhaltung}
 \begin{MathBox}[Komponenten der Impulserhaltung]
 	Aus \(\vec p_\gamma=\vec p'_\gamma+\vec p'_e\) folgen komponentenweise 
 	\(p_\gamma=p'_{\gamma x}+p'_{ex}\) und \(0=p'_{\gamma y}+p'_{ey}\).
@@ -184,7 +199,7 @@ Jetzt (\ref{pex})  und (\ref{pe}) in (\ref{p}) einsetzen und dies ergibt dann di
 
 
 Jetzt den Winkel $\theta$ mittels den $\cos(\theta)$ ausdrücken und einfügen. Es gilt ja:\\
-
+\index{Photon nach Stoß}
 \begin{center}
 	\begin{tikzpicture}[scale=2, >=latex]
 		
@@ -217,12 +232,13 @@ Jetzt den Winkel $\theta$ mittels den $\cos(\theta)$ ausdrücken und einfügen. 
 \begin{align}
 	p'_{\gamma x} = p'_\gamma \cos (\theta) \label{winkel}
 \end{align}
+\index{Projektion}
 \begin{NoteBox}[Projektion richtig anwenden]
 	Nur die \emph{x}-Komponente ist \(p'_{\gamma x}=p'_\gamma\cos\theta\).
 	Der Term \(p'^2_{\gamma x}+p'^2_{\gamma y}=p'^2_\gamma\) — nicht \(p'^2_{\gamma y}\) — 
 	ist der Betragquadratsatz für den Photonenimpuls nach dem Stoß.
 \end{NoteBox}
-
+\index{Photonenimpuls}
 
 (\ref{winkel} ) in (\ref{ppp}) einsetzen und dies ergibt dann die Gleichung  (\ref{pp}) .\\
 \begin{align}
@@ -248,7 +264,7 @@ Gleichung quadrieren:
 	auf beiden Seiten streichen.
 \end{DidacticBox}
 
-
+\index{Energiegleichung}
 Linke Seite ausmultiplizieren:
 \begin{align*}
 	c^2p^2_\gamma+m_e^2c^4+c^2{p'}^2_\gamma&+2m_ec^3p_\gamma-  2c^2p_\gamma{p'}_\gamma-2m_ec^3p'_\gamma=\\
@@ -299,14 +315,17 @@ p_\gamma - p'_\gamma = \frac{c^2}{m_e c^3} \cdot p_\gamma p'_\gamma (1 - \cos\th
 
 
 \subsection{Herleitung der Compton-Formel aus dem Impuls-Ausdruck}
-
+\index{Herleitung}
+\index{Impuls-Ausdruck}
+\index{Impulsgleichung}
+\index{Stoß}
 Aus der Impuls-Gleichung nach dem Stoß gilt:
 \[
 p_\gamma - p'_\gamma = \frac{1}{m_e c} \cdot p_\gamma p'_\gamma (1 - \cos\theta)
 \]
 
 \subsection*{Zusammenhang zwischen Impuls und Wellenlänge}
-
+\index{Wellenlänge}
 Für Photonen (masselose Teilchen) gilt:
 \[
 E = h f = c p \quad \Rightarrow \quad p = \frac{h f}{c}
@@ -320,7 +339,7 @@ p = \frac{h}{\lambda}
 
 
 \subsection*{ Impulsdarstellung mit Wellenlänge}
-
+\index{Impulsdarstellung}
 Für Photonen setzen wir:
 \[
 p_\gamma = \frac{h}{\lambda}, \quad p'_\gamma = \frac{h}{\lambda'}
@@ -355,22 +374,28 @@ h (\lambda' - \lambda) = \frac{h^2}{m_e c} (1 - \cos\theta)
 \]
 
 \subsection*{Endform: Die Compton-Formel}
-
+\index{Compton-Formel}
 \[
 \boxed{
 	\Delta \lambda = \lambda' - \lambda = \frac{h}{m_e c} (1 - \cos\theta)
 }
 \]
 
-
+\index{Röntgenstrahlung}
+\index{Wellenlängenvergrößerung}
+\index{Röntgenstrahlung}
 \begin{HistoryBox}[Comptons Experiment (1923)]
 	A. H. Compton beobachtete bei Röntgenstrahlen eine winkelabhängige 
 	Wellenlängenvergrößerung. Die Formel 
 	\(\Delta\lambda=\tfrac{h}{m_ec}(1-\cos\theta)\) bestätigte den 
 	Teilchenimpuls von Lichtquanten und war ein Meilenstein für die Quantentheorie.
 \end{HistoryBox}
-
-
+\index{Quantentheorie}
+\index{Masse}
+\index{Ruhemasse}
+\index{Compton-Verschiebung}
+\index{hypothetische Ruhemasse}
+\index{Präzisionsmessung}
 \begin{HypoBox}[Was wäre, wenn das Photon eine Masse hätte?]
 	Eine (hypothetische) Ruhemasse des Photons würde \(E^2=c^2p^2+m_\gamma^2c^4\) implizieren 
 	und die Compton-Verschiebung modifizieren. Präzisionsmessungen setzen extrem strenge 
